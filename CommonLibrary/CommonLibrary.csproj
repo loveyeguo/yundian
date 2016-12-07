@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{559E3892-32BB-42D3-9E17-2FE42EB82FCD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CommonLibrary</RootNamespace>
+    <AssemblyName>CommonLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Net35\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.SQLite, Version=1.0.103.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\云点软件\lib\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppconfigOperate.cs" />
+    <Compile Include="BaseExamForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bll\ShouCangHelper.cs" />
+    <Compile Include="CheckMember.cs" />
+    <Compile Include="CommonEnum.cs" />
+    <Compile Include="CommonIsReg.cs" />
+    <Compile Include="ContentShow.cs" />
+    <Compile Include="DESEncrypt.cs" />
+    <Compile Include="EncryptClass.cs" />
+    <Compile Include="ExcelIO.cs" />
+    <Compile Include="FormCompute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCompute.Designer.cs">
+      <DependentUpon>FormCompute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormComputeTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormComputeTree.Designer.cs">
+      <DependentUpon>FormComputeTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCuotj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCuotj.Designer.cs">
+      <DependentUpon>FormCuotj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formdxt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formdxt.Designer.cs">
+      <DependentUpon>Formdxt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formdxts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formdxts.Designer.cs">
+      <DependentUpon>Formdxts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormExam.Designer.cs">
+      <DependentUpon>FormExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHaotsc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHaotsc.Designer.cs">
+      <DependentUpon>FormHaotsc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formpd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formpd.Designer.cs">
+      <DependentUpon>Formpd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSwt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSwt.Designer.cs">
+      <DependentUpon>FormSwt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_regist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_regist.Designer.cs">
+      <DependentUpon>Form_regist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JSONhelper.cs" />
+    <Compile Include="ModelComputeJiexi.cs" />
+    <Compile Include="model\Modeldajx.cs" />
+    <Compile Include="model\TreeNodeZJ.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CheckReg\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="showform\Formdxdxpd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="showform\Formdxdxpd.Designer.cs">
+      <DependentUpon>Formdxdxpd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="showform\ShowJiexi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="showform\ShowJiexi.Designer.cs">
+      <DependentUpon>ShowJiexi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQLiteDBHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SoftReg.cs" />
+    <Compile Include="Subject.cs" />
+    <Compile Include="usercontrol\ButtonEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="usercontrol\ButtonX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="usercontrol\ComputeAnswerFuza.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\ComputeAnswerFuza.Designer.cs">
+      <DependentUpon>ComputeAnswerFuza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\ComputeAnswerJiandan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\ComputeAnswerJiandan.Designer.cs">
+      <DependentUpon>ComputeAnswerJiandan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\dxt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\dxt.Designer.cs">
+      <DependentUpon>dxt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\dxts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\dxts.Designer.cs">
+      <DependentUpon>dxts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\ExamCompute.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\ExamCompute.Designer.cs">
+      <DependentUpon>ExamCompute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\ExamDxt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\ExamDxt.Designer.cs">
+      <DependentUpon>ExamDxt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\ExamDxts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\ExamDxts.Designer.cs">
+      <DependentUpon>ExamDxts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\ExamPd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\ExamPd.Designer.cs">
+      <DependentUpon>ExamPd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\LabelTx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="usercontrol\MyPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="usercontrol\pd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\pd.Designer.cs">
+      <DependentUpon>pd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\ExamAnli.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\ExamAnli.Designer.cs">
+      <DependentUpon>ExamAnli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrol\anli.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrol\anli.Designer.cs">
+      <DependentUpon>anli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formanli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formanli.Designer.cs">
+      <DependentUpon>Formanli.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="image\error.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="image\error.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="image\right.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="image\right.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Net35\Newtonsoft.Json.dll" />
+    <Content Include="Net35\Newtonsoft.Json.pdb" />
+    <Content Include="Net35\Newtonsoft.Json.xml" />
+    <None Include="Service References\CheckReg\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\CheckReg\configuration.svcinfo" />
+    <None Include="Service References\CheckReg\configuration91.svcinfo" />
+    <None Include="Service References\CheckReg\WebServiceExam.disco" />
+    <None Include="Service References\CheckReg\WebServiceExam.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaseExamForm.resx">
+      <DependentUpon>BaseExamForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCompute.resx">
+      <DependentUpon>FormCompute.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormComputeTree.resx">
+      <DependentUpon>FormComputeTree.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCuotj.resx">
+      <DependentUpon>FormCuotj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formdxt.resx">
+      <DependentUpon>Formdxt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formdxts.resx">
+      <DependentUpon>Formdxts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExam.resx">
+      <DependentUpon>FormExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHaotsc.resx">
+      <DependentUpon>FormHaotsc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formpd.resx">
+      <DependentUpon>Formpd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSwt.resx">
+      <DependentUpon>FormSwt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_regist.resx">
+      <DependentUpon>Form_regist.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="showform\Formdxdxpd.resx">
+      <DependentUpon>Formdxdxpd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="showform\ShowJiexi.resx">
+      <DependentUpon>ShowJiexi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\ComputeAnswerFuza.resx">
+      <DependentUpon>ComputeAnswerFuza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\ComputeAnswerJiandan.resx">
+      <DependentUpon>ComputeAnswerJiandan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\dxt.resx">
+      <DependentUpon>dxt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\dxts.resx">
+      <DependentUpon>dxts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\ExamCompute.resx">
+      <DependentUpon>ExamCompute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\ExamDxt.resx">
+      <DependentUpon>ExamDxt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\ExamDxts.resx">
+      <DependentUpon>ExamDxts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\ExamPd.resx">
+      <DependentUpon>ExamPd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\pd.resx">
+      <DependentUpon>pd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\ExamAnli.resx">
+      <DependentUpon>ExamAnli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontrol\anli.resx">
+      <DependentUpon>anli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formanli.resx">
+      <DependentUpon>Formanli.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CheckReg\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
